@@ -1,3 +1,5 @@
+import logging
+logging.basicConfig(level=logging.INFO , format='%(message)s')
 def add(x,y):
     return x+y
 def sub(x,y):
@@ -12,4 +14,4 @@ def calculator(func , num1 , num2):
      return func(num1 , num2)
 
 
-print(calculator( sub , 5 ,4))
+logging.info(calculator( sub , 5 ,4))
